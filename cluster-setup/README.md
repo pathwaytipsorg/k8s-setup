@@ -36,3 +36,9 @@ gcloud compute ssh kube-worker
 sudo -i
 
 bash <(curl -s https://raw.githubusercontent.com/pathwaytipsorg/k8s-setup/main/cluster-setup/latest/install_worker.sh)
+
+# Open Port (Firewall Rules to allow below TCP)
+30000 to 40000
+
+# containerd (Instead docker)
+crictl ps
